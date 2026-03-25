@@ -5,11 +5,11 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "2nd St Strategy - AI Analytics, CDD & Growth Strategy for PE",
+    default: "Commercial Due Diligence & Growth Strategy with AI Analytics | 2nd St Strategy",
     template: "%s | 2nd St Strategy",
   },
   description:
-    "AI Analytics, Commercial Due Diligence & Growth Strategy for middle-market private equity.",
+    "Commercial Due Diligence & Growth Strategy with AI Analytics for middle-market private equity.",
   keywords: [
     "commercial due diligence",
     "private equity",
