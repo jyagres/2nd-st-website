@@ -19,7 +19,7 @@ const aiCapabilities = [
     detail: "AI analytics combined with 15+ years of due diligence work. Our custom tooling goes beyond interview synthesis – we design and build custom solutions to surface patterns and insights that traditional CDD analysis cannot deliver - all in compressed deal timelines.",
     bullets: [
       "Faster synthesis across public and proprietary datasets",
-      "Deep expertise from 150+ CDD engagements to understand what moves the needle",
+      "Deep expertise from 200+ CDD engagements to understand what moves the needle",
       "Expert interview insight analysis and theme extraction",
       "Dynamic market sizing and what-if analysis",
       "Competitive benchmarking that incorporates web scraping to build a full picture",
@@ -92,7 +92,7 @@ export default function AiDrivenPage() {
                 CDD has always been constrained by time. LOI-to-close windows don&apos;t move — but the depth of analysis required to give a sponsor real conviction has only grown. The firms that thrive are the ones that find ways to do <span className="text-accent-blue font-semibold">more, faster, without sacrificing rigor.</span>
               </p>
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                AI doesn&apos;t replace human judgment - <span className="text-accent-blue font-semibold">AI removes the ceiling on what&apos;s possible in the time available.</span> Market sizing models that once took weeks can be built and iterated overnight, with dynamic analysis. Interview transcripts that would take a week to synthesize can be pattern-matched across 150+ prior engagements in hours. Web data that was simply out of reach can now inform competitive positioning in real time. Ad hoc tools and analyses deliver insights to decision-making.
+                AI doesn&apos;t replace human judgment - <span className="text-accent-blue font-semibold">AI removes the ceiling on what&apos;s possible in the time available.</span> Market sizing models that once took weeks can be built and iterated overnight, with dynamic analysis. Interview transcripts that would take a week to synthesize can be pattern-matched across 200+ prior engagements in hours. Web data that was simply out of reach can now inform competitive positioning in real time. Ad hoc tools and analyses deliver insights to decision-making.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
                 The human element — the commercial judgment, the ability to challenge a thesis, the expertise to know what the data is actually telling you honed with <span className="text-accent-blue font-semibold">15+ years of strategic consulting experience</span> that doesn&apos;t go away. It gets sharper, because it&apos;s now working with a richer evidence base than was ever available before.

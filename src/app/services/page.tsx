@@ -38,7 +38,7 @@ const aiCapabilities = [
     detail: "AI analytics combined with 15+ years of due diligence work. Our custom tooling goes beyond interview synthesis – we design and build custom solutions to surface patterns and insights that traditional CDD analysis cannot deliver - all in compressed deal timelines.",
     bullets: [
       "Faster synthesis across public and proprietary datasets",
-      "Deep expertise from 150+ CDD engagements to understand what moves the needle",
+      "Deep expertise from 200+ CDD engagements to understand what moves the needle",
       "Expert interview insight analysis and theme extraction",
       "Dynamic market sizing and what-if analysis",
       "Competitive benchmarking that incorporates web scraping to build a full picture",

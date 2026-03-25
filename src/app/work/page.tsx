@@ -558,7 +558,7 @@ export default function WorkPage() {
             <span className="label-tag">Case Studies</span>
           </div>
           <h1 className="heading-xl text-navy-900 mb-5">
-            150+ engagements.{" "}
+            200+ engagements.{" "}
             <span className="text-gradient-blue">Focused expertise.</span>
           </h1>
           <p className="body-lg max-w-2xl text-slate-600">

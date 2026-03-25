@@ -62,7 +62,7 @@ export default function AboutPage() {
                   "Boutique firm — no overhead, no politics",
                   "Every engagement principal-led by James Agres",
                   "15+ years of top-tier strategy and M&A diligence",
-                  "150+ buy-side and sell-side processes",
+                  "200+ buy-side and sell-side processes",
                   "$6B+ in combined enterprise value evaluated",
                   "Six sectors, deep pattern recognition",
                   "Chicago, IL — serving PE sponsors nationally",

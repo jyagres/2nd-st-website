@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "2nd St Strategy — Commercial Due Diligence & Growth Strategy",
     description:
-      "Boutique commercial due diligence and growth strategy for middle-market private equity. 150+ engagements. $6B+ EV evaluated.",
+      "Boutique commercial due diligence and growth strategy for middle-market private equity. 200+ engagements. $6B+ EV evaluated.",
     url: "https://2ndststrategy.com",
     siteName: "2nd St Strategy",
     type: "website",

@@ -345,7 +345,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <h2 className="heading-lg text-navy-900">
-                150+ engagements.{" "}
+                200+ engagements.{" "}
                 <span className="text-gradient-blue">Six priority sectors.</span>
               </h2>
               <Link href="/work" className="text-sm font-medium text-accent-blue hover:underline flex-shrink-0">
