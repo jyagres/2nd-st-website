@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-navy-900 antialiased;
+    font-family: var(--font-inter);
+  }
+  ::selection {
+    @apply bg-accent-blue/20 text-navy-900;
+  }
+}
+
+@layer components {
+  .container-tight {
+    @apply max-w-6xl mx-auto px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-20 lg:py-28;
+  }
+
+  .heading-xl {
+    @apply text-4xl lg:text-6xl font-black tracking-tight leading-none;
+  }
+
+  .heading-lg {
+    @apply text-3xl lg:text-4xl font-bold tracking-tight;
+  }
+
+  .heading-md {
+    @apply text-xl lg:text-2xl font-semibold;
+  }
+
+  .body-lg {
+    @apply text-lg text-slate-600 leading-relaxed;
+  }
+
+  .body-md {
+    @apply text-base text-slate-500 leading-relaxed;
+  }
+
+  .label-tag {
+    @apply text-xs font-semibold uppercase tracking-widest text-accent-blue;
+  }
+
+  /* Light-theme card: white bg, light border, subtle shadow */
+  .card-base {
+    @apply bg-white border border-slate-200 rounded-xl p-6 lg:p-8 shadow-sm;
+  }
+
+  /* Primary button: navy background, white text */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-navy-900/20 hover:-translate-y-0.5;
+  }
+
+  /* Outline button: navy border/text, blue on hover */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-navy-800 hover:border-accent-blue text-navy-800 hover:text-accent-blue font-medium px-6 py-3 rounded-lg transition-all duration-200;
+  }
+
+  .divider {
+    @apply border-t border-slate-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-accent-blue to-accent-blue-light bg-clip-text text-transparent;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-accent-gold to-accent-gold-light bg-clip-text text-transparent;
+  }
+
+  /* Light-mode grid pattern */
+  .bg-grid {
+    background-image: linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Slightly more visible blue-tinted grid for AI section */
+  .bg-grid-blue {
+    background-image: linear-gradient(rgba(59, 130, 246, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.07) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  /* Hero gradient (light version) */
+  .bg-hero-gradient {
+    background: radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.07) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(212, 165, 71, 0.06) 0%, transparent 50%);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
