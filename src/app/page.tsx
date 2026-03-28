@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 
 
@@ -52,7 +52,7 @@ const services = [
 
 const stats = [
   { value: "15+", label: "Years of experience" },
-  { value: "180+", label: "PE processes supported" },
+  { value: "200+", label: "PE processes supported" },
   { value: "3,000+", label: "Expert interviews conducted" },
   { value: "80+", label: "B2B and B2C Surveys executed" },
   { value: "15", label: "AI analytics deal evaluation tools developed" },
@@ -78,7 +78,7 @@ const aiCapabilities = [
     tag: "CDD",
     bullets: [
       "Faster synthesis across large primary datasets",
-      "Pattern recognition from 180+ prior CDD engagements",
+      "Pattern recognition from 200+ prior CDD engagements",
       "Deeper market analysis in compressed deal timelines",
       "Custom AI tooling built specifically for CDD work",
     ],
@@ -118,7 +118,7 @@ const aiCapabilities = [
 export default function HomePage() {
   return (
     <>
-      {/* ─── HERO ─── */}
+      {/* â”€â”€â”€ HERO â”€â”€â”€ */}
       <section className="pt-20 md:pt-32 pb-20 lg:pt-40 lg:pb-28 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-grid" />
         <div className="absolute inset-0 bg-hero-gradient" />
@@ -133,11 +133,11 @@ export default function HomePage() {
             for middle-market PE and its portfolio companies.
           </h1>
           <p className="body-lg max-w-2xl mb-8">
-            Top-tier commercial due diligence and growth strategy consulting combined with distinctive AI analytics and custom solution development capabilities – delivering what most firms cannot.
+            Top-tier commercial due diligence and growth strategy consulting combined with distinctive AI analytics and custom solution development capabilities â€“ delivering what most firms cannot.
           </p>
           <ul className="space-y-2.5 mb-10">
             {[
-              "180+ buy-side and sell-side processes",
+              "200+ buy-side and sell-side processes",
               "$8B+ in enterprise value evaluated",
               "Custom AI tools built on 15+ years of deal experience",
               "Senior principal-led to ensure highest levels of insight",
@@ -162,7 +162,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── STATS ─── */}
+      {/* â”€â”€â”€ STATS â”€â”€â”€ */}
       <section className="py-14 bg-slate-50 border-y border-slate-200">
         <div className="container-tight">
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
@@ -176,7 +176,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── CLIENT LOGOS ─── */}
+      {/* â”€â”€â”€ CLIENT LOGOS â”€â”€â”€ */}
       <section className="py-12 bg-white">
         <div className="container-tight">
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 text-center mb-8">Trusted by leading private investors and their portfolio companies</p>
@@ -226,7 +226,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── SERVICES PREVIEW ─── */}
+      {/* â”€â”€â”€ SERVICES PREVIEW â”€â”€â”€ */}
       <section className="section-pad bg-white">
         <div className="container-tight">
           <div className="mb-12">
@@ -240,7 +240,7 @@ export default function HomePage() {
                 <span className="text-gradient-blue">AI Analytics</span>
               </h2>
               <Link href="/services" className="text-sm font-medium text-accent-blue hover:underline flex-shrink-0">
-                View all services →
+                View all services â†’
               </Link>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── AI SECTION ─── */}
+      {/* â”€â”€â”€ AI SECTION â”€â”€â”€ */}
       {/* Distinct visual treatment: blue-gold tinted gradient, separates from standard white sections */}
       <section className="section-pad relative overflow-hidden" style={{ background: "linear-gradient(135deg, #eef6ff 0%, #f8fafc 50%, #fffbf0 100%)" }}>
         <div className="absolute inset-0 bg-grid-blue" />
@@ -335,7 +335,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-accent-gold via-accent-blue to-accent-gold" />
       </section>
 
-      {/* ─── SELECTED WORK ─── */}
+      {/* â”€â”€â”€ SELECTED WORK â”€â”€â”€ */}
       <section className="section-pad bg-white">
         <div className="container-tight">
           <div className="mb-12">
@@ -349,7 +349,7 @@ export default function HomePage() {
                 <span className="text-gradient-blue">Six priority sectors.</span>
               </h2>
               <Link href="/work" className="text-sm font-medium text-accent-blue hover:underline flex-shrink-0">
-                View all work →
+                View all work â†’
               </Link>
             </div>
           </div>
@@ -357,7 +357,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {sectors.map((s) => (
               <div key={s} className="card-base flex items-center gap-3 py-4 hover:border-accent-blue/30 transition-colors">
-                <span className="text-accent-gold text-sm">✦</span>
+                <span className="text-accent-gold text-sm">âœ¦</span>
                 <span className="text-navy-800 font-medium text-sm">{s}</span>
               </div>
             ))}
@@ -365,7 +365,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── WHY 2ND ST ─── */}
+      {/* â”€â”€â”€ WHY 2ND ST â”€â”€â”€ */}
       <section className="section-pad bg-slate-50 border-y border-slate-200">
         <div className="container-tight">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -381,7 +381,7 @@ export default function HomePage() {
               <div className="space-y-5">
                 {[
                   { t: "Principal-led, always", d: "Every engagement run by a Senior Principal. Insight generation from deep deal work experience." },
-                  { t: "Primary research first", d: "We talk to the market - customers, competitors, channel partners – using the right tools to gather its insights." },
+                  { t: "Primary research first", d: "We talk to the market - customers, competitors, channel partners â€“ using the right tools to gather its insights." },
                   { t: "AI-integrated workflows", d: "Custom tooling that accelerates synthesis, pattern recognition, and market modeling." },
                   { t: "PE-calibrated delivery", d: "Built for LOI-to-close timelines. Tight formats, clear recommendations." },
                 ].map(({ t, d }) => (
@@ -416,7 +416,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── CTA ─── */}
+      {/* â”€â”€â”€ CTA â”€â”€â”€ */}
       <section className="py-20 bg-navy-950">
         <div className="container-tight text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
