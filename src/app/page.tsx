@@ -357,7 +357,7 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {sectors.map((s) => (
               <div key={s} className="card-base flex items-center gap-3 py-4 hover:border-accent-blue/30 transition-colors">
-                <span className="text-accent-gold text-sm">âœ¦</span>
+                <span className="text-accent-gold text-sm">•</span>
                 <span className="text-navy-800 font-medium text-sm">{s}</span>
               </div>
             ))}
