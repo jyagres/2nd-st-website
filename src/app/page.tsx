@@ -240,7 +240,7 @@ export default function HomePage() {
                 <span className="text-gradient-blue">AI Analytics</span>
               </h2>
               <Link href="/services" className="text-sm font-medium text-accent-blue hover:underline flex-shrink-0">
-                View all services â†’
+                View all services →
               </Link>
             </div>
           </div>
@@ -349,7 +349,7 @@ export default function HomePage() {
                 <span className="text-gradient-blue">Six priority sectors.</span>
               </h2>
               <Link href="/work" className="text-sm font-medium text-accent-blue hover:underline flex-shrink-0">
-                View all work â†’
+                View all work →
               </Link>
             </div>
           </div>
