@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import { Cpu, Building2, Briefcase, Factory, Stethoscope, ShoppingBag } from "lucide-react";
 
 
 
@@ -59,12 +60,12 @@ const stats = [
 ];
 
 const sectors = [
-  "Technology",
-  "Built Environment",
-  "Business Services",
-  "Industrials",
-  "Healthcare",
-  "Consumer",
+  { label: "Technology",         icon: Cpu },
+  { label: "Built Environment",  icon: Building2 },
+  { label: "Business Services",  icon: Briefcase },
+  { label: "Industrials",        icon: Factory },
+  { label: "Healthcare",         icon: Stethoscope },
+  { label: "Consumer",           icon: ShoppingBag },
 ];
 
 const aiCapabilities = [
@@ -356,9 +357,9 @@ export default function HomePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {sectors.map((s) => (
-              <div key={s} className="card-base flex items-center gap-3 py-4 hover:border-accent-blue/30 transition-colors">
-                <span className="text-accent-gold text-sm">•</span>
-                <span className="text-navy-800 font-medium text-sm">{s}</span>
+              <div key={s.label} className="card-base flex items-center gap-3 py-4 hover:border-accent-blue/30 transition-colors">
+                <s.icon className="w-5 h-5 text-accent-gold flex-shrink-0" />
+                <span className="text-navy-800 font-medium text-sm">{s.label}</span>
               </div>
             ))}
           </div>
