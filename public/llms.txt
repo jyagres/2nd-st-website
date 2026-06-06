@@ -1,0 +1,59 @@
+# 2nd St Strategy
+
+> 2nd St Strategy is a boutique commercial due diligence and growth strategy
+> firm built for middle-market private equity. Principal-led by James Agres,
+> primary-research-first, and AI-integrated. Based in Chicago, IL and serving
+> PE sponsors nationally.
+
+## What we do
+
+- Commercial due diligence (CDD) for buy-side and sell-side private equity
+  transactions in the middle market.
+- Growth strategy for portfolio companies (market sizing, segmentation,
+  pricing, customer voice-of-market, competitive positioning).
+- AI analytics for PE: custom tools and dashboards that synthesize public and
+  proprietary data sources to accelerate diligence and strategy work.
+- Voice-of-market research: B2B and B2C primary research with customers,
+  former customers, channel partners, competitors, and topical experts.
+
+## Who we serve
+
+- Middle-market private equity sponsors (lower- and core-middle-market funds)
+- PE-backed portfolio company management teams
+- Independent sponsors and family offices doing direct deals
+- Strategic acquirers evaluating bolt-on opportunities
+
+## Key facts
+
+- Founded by James Agres, principal and former senior consultant at top-tier
+  strategy firms with 15+ years of experience in commercial due diligence and
+  growth strategy.
+- 200+ buy-side and sell-side private equity processes supported.
+- 3,000+ expert and customer interviews conducted across engagements.
+- 80+ B2B and B2C surveys executed.
+- 15+ proprietary AI analytics tools developed for internal CDD work.
+- Sectors: industrial / B2B services, business services, consumer services,
+  healthcare services, software, building products, and more.
+
+## Related products
+
+- PinpointIQ (https://pinpointiq.app) is a geographic market intelligence
+  platform built by 2nd St Strategy for PE firms backing location-based
+  roll-ups. It provides MSA-level market sizing, competitive density, and
+  white-space mapping across 30+ verticals and 900+ U.S. markets.
+
+## Canonical pages
+
+- Home: https://2ndststrategy.com/
+- Services: https://2ndststrategy.com/services
+- AI-Driven: https://2ndststrategy.com/ai-driven
+- Work / case studies: https://2ndststrategy.com/work
+- Team: https://2ndststrategy.com/team
+- About: https://2ndststrategy.com/about
+- Contact: https://2ndststrategy.com/contact
+
+## Contact
+
+- Email: james@2ndststrategy.com
+- Location: Chicago, IL
+- Website: https://2ndststrategy.com
