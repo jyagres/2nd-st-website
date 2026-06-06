@@ -55,7 +55,7 @@ const aiCapabilities = [
     tag: "Data Products",
     detail: "We build proprietary data tools for due diligence and strategy for PE-backed companies. Local market analytics, video or image analysis, customer sentiment analysis, and ad hoc tools and scripts to inform strategy and deal dynamics.",
     bullets: [
-      "Pinpoint IQ - geographic market intelligence platform for roll-up target identification",
+      "PinpointIQ - geographic market intelligence platform for roll-up target identification",
       "Geographic white space analysis at MSA level",
       "Population, penetration, and opportunity sizing",
       "Identification of product usage through video or image analysis",

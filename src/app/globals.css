@@ -75,6 +75,38 @@
   .divider {
     @apply border-t border-slate-200;
   }
+
+  /* Long-form insight article body */
+  .prose-insight {
+    @apply text-slate-700;
+  }
+  .prose-insight h2 {
+    @apply text-2xl lg:text-3xl font-bold text-navy-900 mt-12 mb-4 tracking-tight;
+  }
+  .prose-insight h2:first-child {
+    @apply mt-0;
+  }
+  .prose-insight h3 {
+    @apply text-lg lg:text-xl font-bold text-navy-900 mt-8 mb-3;
+  }
+  .prose-insight p {
+    @apply text-base text-slate-600 leading-relaxed mb-5;
+  }
+  .prose-insight ul {
+    @apply list-disc pl-6 mb-5 space-y-2 text-slate-600;
+  }
+  .prose-insight ol {
+    @apply list-decimal pl-6 mb-5 space-y-2 text-slate-600;
+  }
+  .prose-insight a {
+    @apply text-accent-blue hover:underline font-medium;
+  }
+  .prose-insight strong {
+    @apply text-navy-900 font-semibold;
+  }
+  .prose-insight blockquote {
+    @apply border-l-4 border-accent-blue pl-5 py-1 my-6 italic text-slate-700;
+  }
 }
 
 @layer utilities {

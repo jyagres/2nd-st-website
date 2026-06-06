@@ -16,6 +16,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/team", priority: 0.7, changeFrequency: "monthly" },
     { path: "/about", priority: 0.7, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.6, changeFrequency: "yearly" },
+    { path: "/insights", priority: 0.8, changeFrequency: "weekly" },
+    { path: "/insights/commercial-due-diligence", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/insights/cdd-for-roll-ups", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/insights/voice-of-market-research", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/insights/ai-tools-pe-diligence", priority: 0.8, changeFrequency: "monthly" },
   ];
 
   return routes.map(({ path, priority, changeFrequency }) => ({
