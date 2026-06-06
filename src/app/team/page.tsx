@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -72,7 +72,7 @@ export default function TeamPage() {
                 <h3 className="text-navy-900 font-bold text-xl mb-0.5">James Agres</h3>
                 <p className="text-accent-blue text-sm font-semibold mb-3">Founder &amp; Principal</p>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  James founded 2nd St Strategy after 15+ years driving commercial due diligence and growth strategy engagements. He&apos;s led 180+ buy-side and sell-side processes across technology, built environment, industrials &amp; business services sectors — and built the AI tooling delivering unique insights for every project.
+                  James founded 2nd St Strategy after 15+ years driving commercial due diligence and growth strategy engagements. He&apos;s led 180+ buy-side and sell-side processes across technology, built environment, industrials &amp; business services sectors. and built the AI tooling delivering unique insights for every project.
                 </p>
                 <div className="mb-4">
                   <p className="text-xs font-semibold uppercase tracking-widest text-accent-blue mb-2">Past Experience</p>

@@ -94,7 +94,7 @@ const aiCapabilities = [
     tag: "Data Products",
     bullets: [
       "Proprietary data tools for PE-backed companies",
-      "Pinpoint IQ - geographic market intelligence for roll-ups",
+      "PinpointIQ - geographic market intelligence for roll-ups",
       "White-space identification at the MSA level",
       "Built for operators, not just analysts",
     ],

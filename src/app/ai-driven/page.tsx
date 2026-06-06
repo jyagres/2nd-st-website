@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ const aiCapabilities = [
     tag: "Data Products",
     detail: "We build proprietary data tools for due diligence and strategy for PE-backed companies. Local market analytics, video or image analysis, customer sentiment analysis, and ad hoc tools and scripts to inform strategy and deal dynamics.",
     bullets: [
-      "Pinpoint IQ - geographic market intelligence platform for roll-up target identification",
+      "PinpointIQ - geographic market intelligence platform for roll-up target identification",
       "Geographic white space analysis at MSA level",
       "Population, penetration, and opportunity sizing",
       "Identification of product usage through video or image analysis",
@@ -89,20 +89,20 @@ export default function AiDrivenPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                CDD has always been constrained by time. LOI-to-close windows don&apos;t move — but the depth of analysis required to give a sponsor real conviction has only grown. The firms that thrive are the ones that find ways to do <span className="text-accent-blue font-semibold">more, faster, without sacrificing rigor.</span>
+                CDD has always been constrained by time. LOI-to-close windows don&apos;t move. but the depth of analysis required to give a sponsor real conviction has only grown. The firms that thrive are the ones that find ways to do <span className="text-accent-blue font-semibold">more, faster, without sacrificing rigor.</span>
               </p>
               <p className="text-slate-600 text-sm leading-relaxed mb-4">
                 AI doesn&apos;t replace human judgment - <span className="text-accent-blue font-semibold">AI removes the ceiling on what&apos;s possible in the time available.</span> Market sizing models that once took weeks can be built and iterated overnight, with dynamic analysis. Interview transcripts that would take a week to synthesize can be pattern-matched across 200+ prior engagements in hours. Web data that was simply out of reach can now inform competitive positioning in real time. Ad hoc tools and analyses deliver insights to decision-making.
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                The human element — the commercial judgment, the ability to challenge a thesis, the expertise to know what the data is actually telling you honed with <span className="text-accent-blue font-semibold">15+ years of strategic consulting experience</span> that doesn&apos;t go away. It gets sharper, because it&apos;s now working with a richer evidence base than was ever available before.
+                The human element. the commercial judgment, the ability to challenge a thesis, the expertise to know what the data is actually telling you honed with <span className="text-accent-blue font-semibold">15+ years of strategic consulting experience</span> that doesn&apos;t go away. It gets sharper, because it&apos;s now working with a richer evidence base than was ever available before.
               </p>
             </div>
             <div className="space-y-4">
               {[
                 {
                   title: "More signal, same timeline",
-                  body: "AI tools surface patterns across datasets and prior engagements that would take weeks to find manually — delivered within the deal window.",
+                  body: "AI tools surface patterns across datasets and prior engagements that would take weeks to find manually. delivered within the deal window.",
                 },
                 {
                   title: "Human judgment, amplified",
@@ -110,11 +110,11 @@ export default function AiDrivenPage() {
                 },
                 {
                   title: "Insights that weren't possible before",
-                  body: "Geographic market models, video analysis, web scrapers, custom survey tools — capabilities that simply didn't exist for boutique CDD firms until now.",
+                  body: "Geographic market models, video analysis, web scrapers, custom survey tools. capabilities that simply didn't exist for boutique CDD firms until now.",
                 },
                 {
                   title: "Built for PE timelines, not research labs",
-                  body: "Everything we build is designed to answer specific deal questions under real time pressure — not to showcase technology for its own sake.",
+                  body: "Everything we build is designed to answer specific deal questions under real time pressure. not to showcase technology for its own sake.",
                 },
               ].map(({ title, body }) => (
                 <div key={title} className="flex items-start gap-4">
@@ -195,7 +195,7 @@ export default function AiDrivenPage() {
           </div>
           <div className="grid lg:grid-cols-2 gap-6">
 
-            {/* Project 20 — GSP01 */}
+            {/* Project 20. GSP01 */}
             <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-accent-blue/30 transition-all duration-200">
               <div className="relative w-full aspect-video bg-slate-900 overflow-hidden">
                 <img
@@ -218,7 +218,7 @@ export default function AiDrivenPage() {
                 </p>
                 <ul className="space-y-1.5 mb-4">
                   {[
-                    "Built a proprietary SFX database covering 2,000+ concerts — not available from any existing source",
+                    "Built a proprietary SFX database covering 2,000+ concerts. not available from any existing source",
                     "Reduced research time from months of manual review to automated overnight processing via custom AI pipeline",
                   ].map((o) => (
                     <li key={o} className="flex items-start gap-2 text-xs text-slate-600">
@@ -237,12 +237,12 @@ export default function AiDrivenPage() {
               </div>
             </div>
 
-            {/* Project 19 — Pinpoint IQ */}
+            {/* Project 19. PinpointIQ */}
             <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-accent-blue/30 transition-all duration-200">
               <div className="relative w-full aspect-video bg-slate-900 overflow-hidden">
                 <img
                   src="/case-studies/project-19/animation.gif"
-                  alt="Pinpoint IQ"
+                  alt="PinpointIQ"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -256,7 +256,7 @@ export default function AiDrivenPage() {
                   How can a geographic market intelligence platform accelerate roll-up strategy for PE-backed businesses?
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-4">
-                  A PE-focused strategy firm needed a scalable way to deliver MSA-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built Pinpoint IQ, a proprietary SaaS platform replacing manual market sizing with dynamic, map-based analytics.
+                  A PE-focused strategy firm needed a scalable way to deliver MSA-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built PinpointIQ, a proprietary SaaS platform replacing manual market sizing with dynamic, map-based analytics.
                 </p>
                 <ul className="space-y-1.5 mb-4">
                   {[
@@ -293,7 +293,7 @@ export default function AiDrivenPage() {
         <div className="container-tight text-center">
           <h2 className="heading-lg text-white mb-4">Ready to talk about AI for your deal?</h2>
           <p className="body-lg text-slate-300 mb-8 max-w-xl mx-auto">
-            Tell us about the process — sector, stage, timeline. We move fast.
+            Tell us about the process. sector, stage, timeline. We move fast.
           </p>
           <Link href="/contact" className="btn-primary">
             Get in touch

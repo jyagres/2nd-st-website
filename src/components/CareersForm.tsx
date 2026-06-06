@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, FormEvent } from "react";
 
@@ -19,7 +19,7 @@ export default function CareersForm({ role, onClose }: Props) {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Careers Inquiry — ${role} — ${form.name}`);
+    const subject = encodeURIComponent(`Careers Inquiry. ${role}. ${form.name}`);
     const body = encodeURIComponent(
       `Role: ${role}\n\nName: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\nLinkedIn: ${form.linkedin}\n\nWhy interested:\n${form.interest}`
     );

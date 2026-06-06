@@ -1,7 +1,7 @@
-// ChartThumbnails.tsx
+﻿// ChartThumbnails.tsx
 // Six distinct inline SVG chart types for case study card previews.
 // All use viewBox="0 0 480 270" (16:9). Navy/blue/gold palette.
-// These are analytical placeholders — replace with real deliverable screenshots when available.
+// These are analytical placeholders. replace with real deliverable screenshots when available.
 
 export function ScatterChart() {
   // Competitive Positioning: Market Size ($B) vs. Growth Rate (%)
@@ -19,7 +19,7 @@ export function ScatterChart() {
       <rect width="480" height="270" fill="#f8fafc" />
       {/* Title */}
       <text x="264" y="16" textAnchor="middle" fill="#0f172a" fontSize="8.5" fontWeight="600" fontFamily="Inter,sans-serif">
-        Competitive Positioning — Market Size vs. Growth Rate
+        Competitive Positioning. Market Size vs. Growth Rate
       </text>
       {/* Gridlines */}
       {[151, 254, 357].map(x => <line key={x} x1={x} y1="28" x2={x} y2="234" stroke="#e2e8f0" strokeWidth="0.7" />)}
@@ -135,7 +135,7 @@ export function HeatMapChart() {
     <svg viewBox="0 0 480 270" className="w-full h-full" aria-label="Heat map: competitive landscape">
       <rect width="480" height="270" fill="#f8fafc" />
       <text x="240" y="16" textAnchor="middle" fill="#0f172a" fontSize="8.5" fontWeight="600" fontFamily="Inter,sans-serif">
-        Competitive Landscape — Capability Assessment
+        Competitive Landscape. Capability Assessment
       </text>
       {/* Column headers */}
       {cols.map((c, i) => (
@@ -176,7 +176,7 @@ export function HeatMapChart() {
 }
 
 export function TimeSeriesChart() {
-  // Revenue Trend by Cohort ($M) — 2018–2023
+  // Revenue Trend by Cohort ($M). 2018–2023
   const xs = [52, 118, 183, 249, 314, 380];
   const years = ["2018","2019","2020","2021","2022","2023"];
   // Y scale: 0-60M → py = 234 - val/60 * 206
@@ -193,7 +193,7 @@ export function TimeSeriesChart() {
     <svg viewBox="0 0 480 270" className="w-full h-full" aria-label="Time series: revenue trends by cohort">
       <rect width="480" height="270" fill="#f8fafc" />
       <text x="216" y="16" textAnchor="middle" fill="#0f172a" fontSize="8.5" fontWeight="600" fontFamily="Inter,sans-serif">
-        Revenue Trend by Cohort ($M) — 2018–2023
+        Revenue Trend by Cohort ($M). 2018–2023
       </text>
       {/* Y gridlines */}
       {[0,10,20,30,40,50,60].map(v => (
@@ -236,7 +236,7 @@ export function TimeSeriesChart() {
 }
 
 export function StackedAreaChart() {
-  // Market Share Evolution (%) — 2017–2024
+  // Market Share Evolution (%). 2017–2024
   const xs = [52, 99, 146, 193, 240, 287, 334, 381];
   const years = ["'17","'18","'19","'20","'21","'22","'23","'24"];
 
@@ -254,7 +254,7 @@ export function StackedAreaChart() {
     <svg viewBox="0 0 480 270" className="w-full h-full" aria-label="Stacked area: market share evolution">
       <rect width="480" height="270" fill="#f8fafc" />
       <text x="216" y="16" textAnchor="middle" fill="#0f172a" fontSize="8.5" fontWeight="600" fontFamily="Inter,sans-serif">
-        Market Share Evolution (%) — 2017–2024
+        Market Share Evolution (%). 2017–2024
       </text>
       {/* Y gridlines */}
       {[25,50,75].map(v => {
@@ -315,7 +315,7 @@ export function BubbleChart() {
     <svg viewBox="0 0 480 270" className="w-full h-full" aria-label="Bubble chart: MSA opportunity sizing">
       <rect width="480" height="270" fill="#f8fafc" />
       <text x="216" y="16" textAnchor="middle" fill="#0f172a" fontSize="8.5" fontWeight="600" fontFamily="Inter,sans-serif">
-        MSA Market Opportunity — Population vs. Penetration vs. Market Size
+        MSA Market Opportunity. Population vs. Penetration vs. Market Size
       </text>
       {/* Gridlines */}
       {[3,6,9,12].map(v => <line key={v} x1={px(v)} y1="28" x2={px(v)} y2="234" stroke="#e2e8f0" strokeWidth="0.7" />)}

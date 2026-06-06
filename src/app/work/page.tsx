@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
@@ -22,11 +22,11 @@ const projects: Project[] = [
     serviceType: ["Buy-Side DD", "AI Analytics"],
     title: "Do recent trends in live entertainment create tailwinds for a special effects company?",
     outcomes: [
-      "Built a proprietary SFX database covering 2,000+ concerts — not available from any existing source",
+      "Built a proprietary SFX database covering 2,000+ concerts. not available from any existing source",
       "Reduced research time from months of manual review to automated overnight processing via custom AI pipeline",
     ],
     description:
-      "A sports and entertainment investment firm needed a systematic way to catalog the use of special effects — lasers, pyrotechnics, CO2 jets, confetti cannons, flame jets, and pixel walls — across thousands of live concert performances. 2nd St Strategy designed and deployed a custom AI-powered video analysis pipeline to review concert footage at scale, identifying and timestamping special effects across 2,000+ shows across genres and venues.",
+      "A sports and entertainment investment firm needed a systematic way to catalog the use of special effects. lasers, pyrotechnics, CO2 jets, confetti cannons, flame jets, and pixel walls. across thousands of live concert performances. 2nd St Strategy designed and deployed a custom AI-powered video analysis pipeline to review concert footage at scale, identifying and timestamping special effects across 2,000+ shows across genres and venues.",
     highlights: ["AI Video Analysis Pipeline (Gemini 2.5 on Vertex AI)", "2,000+ Concert Video Corpus (5 Genres × 2 Years)", "Multi-Stage Frame Verification Workflow", "Structured SFX Database by Show, Venue, Artist, and Genre"],
     images: ["/case-studies/project-20/animation.gif"],
   },
@@ -40,7 +40,7 @@ const projects: Project[] = [
       "Enables consistent, data-driven acquisition targeting for PE-backed roll-up strategies",
     ],
     description:
-      "A private equity-focused strategy consulting firm needed a scalable way to deliver MSA-level and census tract-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built Pinpoint IQ, a proprietary SaaS platform to replace manual market sizing with dynamic, map-based analytics.",
+      "A private equity-focused strategy consulting firm needed a scalable way to deliver MSA-level and census tract-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built PinpointIQ, a proprietary SaaS platform to replace manual market sizing with dynamic, map-based analytics.",
     highlights: ["Market Sizing by MSA and Census Tract", "Business Density and Competitive Mapping", "GDP, Income, and Demographic Overlays", "Roll-Up Target Identification Framework"],
     images: ["/case-studies/project-19/animation.gif"],
   },
@@ -105,7 +105,7 @@ const projects: Project[] = [
     title: "Can a configurable clinical trial workflow platform displace entrenched solutions and capture meaningful share in a growing but complex market?",
     outcomes: [
       "2024 TAM for clinical trial process management is $1.8B, projected to grow at 8.4% CAGR through 2029",
-      "Judi received strong appraisal from clinical trial professionals — significant advancement over existing solutions; low market awareness identified as primary near-term constraint",
+      "Judi received strong appraisal from clinical trial professionals. significant advancement over existing solutions; low market awareness identified as primary near-term constraint",
     ],
     description:
       "A private equity investor evaluated an investment in Judi, a configurable workflow automation platform designed to manage clinical trial processes for pharmaceutical companies and CROs. 2nd St Strategy sized the addressable market, assessed unmet needs in the clinical trial management software landscape, and evaluated Judi's competitive positioning and go-to-market strategy against entrenched incumbents.",
@@ -284,7 +284,7 @@ const projects: Project[] = [
     serviceType: ["Strategy"],
     title: "How can a specialized heat transfers manufacturer maintain its competitive edge in the rapidly evolving custom apparel and screen-printing market?",
     outcomes: [
-      "DTF transition likely to accelerate — clear benefit demonstrated for ~90% of custom apparel",
+      "DTF transition likely to accelerate. clear benefit demonstrated for ~90% of custom apparel",
       "Outlined key strategic challenges the company must overcome to capitalize on the technology shift",
     ],
     description:
@@ -374,7 +374,7 @@ const projects: Project[] = [
     serviceType: ["Buy-Side DD", "Roll-Up Strategy"],
     title: "How can a specialized veterinary surgery platform address systemic industry burnout to capture market share in a high-demand, supply-constrained sector?",
     outcomes: [
-      "Industry procedure wait times exceed 3 weeks; Target maintains a 1-week wait time — a significant GP referral driver",
+      "Industry procedure wait times exceed 3 weeks; Target maintains a 1-week wait time. a significant GP referral driver",
       "Surgeons in corporate practices rate work-life sustainability lower; Target's model is a competitive differentiator",
     ],
     description:
@@ -437,7 +437,7 @@ function Lightbox({ state, onClose, onNav }: {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/85"
       onClick={onClose}
     >
-      {/* Image container — click doesn't propagate to overlay */}
+      {/* Image container. click doesn't propagate to overlay */}
       <div
         className="relative max-w-5xl w-full mx-4"
         onClick={(e) => e.stopPropagation()}
@@ -624,7 +624,7 @@ export default function WorkPage() {
                     <h3 className="text-navy-900 font-bold text-base leading-snug line-clamp-3">{project.title}</h3>
                   </div>
 
-                  {/* Carousel — only render if images exist */}
+                  {/* Carousel. only render if images exist */}
                   {project.images.length > 0 && (
                     <div className="relative w-full aspect-video bg-slate-900 overflow-hidden border-b border-slate-200">
                       {/* Current image */}
@@ -634,7 +634,7 @@ export default function WorkPage() {
                       >
                         <Image
                           src={project.images[currentIdx]}
-                          alt={`${project.title} — slide ${currentIdx + 1}`}
+                          alt={`${project.title}. slide ${currentIdx + 1}`}
                           fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -696,7 +696,7 @@ export default function WorkPage() {
                     </div>
                   )}
 
-                  {/* Card body — badges + toggle */}
+                  {/* Card body. badges + toggle */}
                   <div className="p-5 pt-4">
                     {/* Badges */}
                     <div className="flex flex-wrap gap-2 mb-3">
@@ -784,7 +784,7 @@ export default function WorkPage() {
 
           {/* Note */}
           <p className="text-slate-400 text-xs mt-10 text-center">
-            All work is confidential. Sector, engagement type, and outcomes shown — company names withheld.
+            All work is confidential. Sector, engagement type, and outcomes shown. company names withheld.
           </p>
         </div>
       </section>
@@ -796,7 +796,7 @@ export default function WorkPage() {
             Recognize a situation here?
           </h2>
           <p className="body-lg text-slate-300 mb-8 max-w-xl mx-auto">
-            Active deal, portfolio question, or strategic inflection — let&apos;s talk.
+            Active deal, portfolio question, or strategic inflection. let&apos;s talk.
           </p>
           <Link href="/contact" className="btn-primary">
             Start the conversation

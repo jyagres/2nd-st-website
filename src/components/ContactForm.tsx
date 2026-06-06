@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, FormEvent } from "react";
 
@@ -97,7 +97,7 @@ export default function ContactForm() {
           rows={6}
           value={formState.message}
           onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-          placeholder="Tell us about the deal or project — sector, stage, timeline, and core commercial questions you're trying to answer."
+          placeholder="Tell us about the deal or project. sector, stage, timeline, and core commercial questions you're trying to answer."
           className="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-navy-900 placeholder-slate-400 focus:outline-none focus:border-accent-blue focus:ring-1 focus:ring-accent-blue/30 transition-colors text-sm resize-none"
         />
       </div>

@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — 2nd St Strategy",
+  title: "About",
   description:
-    "About 2nd St Strategy — principal-led commercial due diligence and growth strategy for middle-market private equity.",
+    "About 2nd St Strategy. Principal-led commercial due diligence and growth strategy for middle-market private equity.",
+  alternates: { canonical: "https://2ndststrategy.com/about" },
 };
 
 const principles = [
   {
     title: "Primary research is the foundation.",
-    body: "Secondary data describes what happened. Customers tell you why — and what's next. Every engagement starts with talking to the market.",
+    body: "Secondary data describes what happened. Customers tell you why, and what's next. Every engagement starts with talking to the market.",
   },
   {
     title: "AI accelerates. It doesn't replace.",
-    body: "Our custom tools help synthesize faster and pattern-match across engagements. But the commercial judgment still requires experience.",
+    body: "Our custom tools help synthesize faster and pattern-match across engagements. The commercial judgment still requires experience.",
   },
   {
     title: "Principals run the work.",
@@ -22,14 +23,14 @@ const principles = [
   },
   {
     title: "Honest over comfortable.",
-    body: "We'll challenge a thesis if the evidence points elsewhere. The value is in the rigor — not in confirming what you already believe.",
+    body: "We'll challenge a thesis if the evidence points elsewhere. The value is in the rigor, not in confirming what you already believe.",
   },
 ];
 
 export default function AboutPage() {
   return (
     <>
-      {/* ─── HEADER ─── */}
+      {/* HEADER */}
       <section className="pt-20 md:pt-32 pb-20 bg-slate-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid" />
         <div className="container-tight relative z-10">
@@ -47,7 +48,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── FIRM STORY ─── */}
+      {/* FIRM STORY */}
       <section className="section-pad bg-white">
         <div className="container-tight">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -59,13 +60,12 @@ export default function AboutPage() {
               <h2 className="heading-lg text-navy-900 mb-6">Built for the way PE actually works.</h2>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Boutique firm — no overhead, no politics",
+                  "Boutique firm. No overhead, no politics.",
                   "Every engagement principal-led by James Agres",
                   "15+ years of top-tier strategy and M&A diligence",
                   "200+ buy-side and sell-side processes",
-                  "$6B+ in combined enterprise value evaluated",
                   "Six sectors, deep pattern recognition",
-                  "Chicago, IL — serving PE sponsors nationally",
+                  "Chicago, IL. Serving PE sponsors nationally.",
                 ].map((b) => (
                   <li key={b} className="flex items-start gap-3 text-slate-600 text-sm">
                     <svg className="w-4 h-4 text-accent-blue mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -87,7 +87,7 @@ export default function AboutPage() {
               {/* Quick stat cards */}
               {[
                 { val: "15+", label: "Years of experience", sub: "" },
-                { val: "180+", label: "PE processes supported", sub: "Buy-side and sell-side" },
+                { val: "200+", label: "PE processes supported", sub: "Buy-side and sell-side" },
                 { val: "3,000+", label: "Expert interviews conducted", sub: "Customers, competitors, experts" },
                 { val: "80+", label: "B2B and B2C surveys executed", sub: "" },
                 { val: "15", label: "AI analytics tools developed", sub: "" },
@@ -105,7 +105,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── CLIENT LOGOS ─── */}
+      {/* CLIENT LOGOS */}
       <section className="py-12 bg-white">
         <div className="container-tight">
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 text-center mb-8">Trusted by leading private investors and their portfolio companies</p>
@@ -151,7 +151,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── PRINCIPLES ─── */}
+      {/* PRINCIPLES */}
       <section className="section-pad bg-slate-50 border-y border-slate-200">
         <div className="container-tight">
           <div className="mb-12">
@@ -173,14 +173,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── CTA ─── */}
+      {/* CTA */}
       <section className="py-20 bg-navy-950">
         <div className="container-tight text-center">
           <h2 className="heading-lg text-white mb-4">
             Ready to talk?
           </h2>
           <p className="body-lg text-slate-300 mb-8 max-w-lg mx-auto">
-            Active deal process, portfolio question, or just want to connect — we respond within 24 hours.
+            Active deal process, portfolio question, or just want to connect. We respond within 24 hours.
           </p>
           <Link href="/contact" className="btn-primary">
             Get in touch
