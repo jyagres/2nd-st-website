@@ -134,7 +134,7 @@ export default function HomePage() {
             for middle-market PE and its portfolio companies.
           </h1>
           <p className="body-lg max-w-2xl mb-8">
-            Top-tier commercial due diligence and growth strategy consulting combined with distinctive AI analytics and custom solution development capabilities â€“ delivering what most firms cannot.
+            Top-tier commercial due diligence and growth strategy consulting combined with distinctive AI analytics and custom solution development capabilities. We deliver what most firms cannot.
           </p>
           <ul className="space-y-2.5 mb-10">
             {[
