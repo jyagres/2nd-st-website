@@ -40,7 +40,7 @@ export default function StructuredData() {
     sameAs: [
       "https://www.linkedin.com/company/2nd-st-strategy/",
       "https://www.linkedin.com/in/jamesagres/",
-      "https://pinpointiq.app",
+      "https://pinpointiq.ai",
     ],
     knowsAbout: [
       "Commercial Due Diligence",
@@ -94,11 +94,11 @@ export default function StructuredData() {
   const pinpointiq = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "@id": "https://pinpointiq.app/#software",
+    "@id": "https://pinpointiq.ai/#software",
     name: "PinpointIQ",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    url: "https://pinpointiq.app",
+    url: "https://pinpointiq.ai",
     publisher: { "@id": "https://2ndststrategy.com/#organization" },
     description:
       "Geographic market intelligence platform for PE firms backing location-based roll-ups. MSA-level market sizing, competitive density, and white-space mapping across 900+ U.S. markets.",

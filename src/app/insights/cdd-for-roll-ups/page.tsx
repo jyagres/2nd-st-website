@@ -107,7 +107,7 @@ export default function Page() {
       <p>
         At <strong>2nd St Strategy</strong>, every roll-up CDD starts at the
         MSA level. We use our own software platform,{" "}
-        <a href="https://pinpointiq.app" target="_blank" rel="noopener">
+        <a href="https://pinpointiq.ai" target="_blank" rel="noopener">
           PinpointIQ
         </a>
         , which covers 900+ U.S. metropolitan statistical areas across 30+

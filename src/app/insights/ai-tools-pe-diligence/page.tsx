@@ -105,7 +105,7 @@ export default function Page() {
       <p>
         For any location-based or route-based business, the right unit of
         analysis is the metropolitan statistical area (MSA). We built{" "}
-        <a href="https://pinpointiq.app" target="_blank" rel="noopener">
+        <a href="https://pinpointiq.ai" target="_blank" rel="noopener">
           PinpointIQ
         </a>{" "}
         as a software platform for exactly that. It covers 900+ U.S. MSAs

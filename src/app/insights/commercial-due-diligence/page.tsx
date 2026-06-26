@@ -93,7 +93,7 @@ export default function Page() {
           <strong>Market sizing.</strong> Top-down and bottom-up, with
           assumptions exposed. For location-based businesses, we work at the
           MSA level using our own software platform,{" "}
-          <a href="https://pinpointiq.app" target="_blank" rel="noopener">
+          <a href="https://pinpointiq.ai" target="_blank" rel="noopener">
             PinpointIQ
           </a>
           . For other categories, we build the model in the deal context.
@@ -157,7 +157,7 @@ export default function Page() {
         extraction, web-scale competitive scraping and benchmarking, dynamic
         TAM modeling with what-if scenarios, and pattern matching across
         deals. For location-based services categories,{" "}
-        <a href="https://pinpointiq.app" target="_blank" rel="noopener">
+        <a href="https://pinpointiq.ai" target="_blank" rel="noopener">
           PinpointIQ
         </a>{" "}
         gives every engagement an MSA-level market sizing and competitive
