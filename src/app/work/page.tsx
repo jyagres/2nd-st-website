@@ -248,7 +248,7 @@ const projects: Project[] = [
     serviceType: ["Buy-Side DD"],
     title: "How can a leading appliance parts distributor grow in an evolving market for household appliance repair?",
     outcomes: [
-      "$1.1–1.5B TAM for appliance part distribution in the U.S., growing at ~2.5% CAGR",
+      "$1.1 to $1.5B TAM for appliance part distribution in the U.S., growing at ~2.5% CAGR",
       "Headwinds from Korean OEM growth and Right to Repair trends tempering near-term growth",
     ],
     description:

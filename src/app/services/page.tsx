@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const cddProcess = [
   { step: "1", title: "Scope alignment", body: "Define core due diligence questions." },
-  { step: "2", title: "Research design", body: "Identify decision makers and other key parties, draft interview guide, recruit survey participant panel, design secondary data framework – bespoke analysis based on deal needs." },
+  { step: "2", title: "Research design", body: "Identify decision makers and other key parties, draft interview guide, recruit survey participant panel, design secondary data framework. Bespoke analysis based on deal needs." },
   { step: "3", title: "AI analytics", body: "Design and develop custom tools and scripts required to answer core diligence questions." },
   { step: "4", title: "Desktop research", body: "Identify key data sources, use traditional and AI analysis to build TAM and SAM models." },
   { step: "5", title: "Primary research fieldwork", body: "Conduct structured interviews - customers, competitors, experts. Execute B2B and B2C surveys." },
@@ -43,7 +43,7 @@ const aiCapabilities = [
     ),
     label: "AI-Powered Due Diligence",
     tag: "CDD",
-    detail: "AI analytics combined with 15+ years of due diligence work. Our custom tooling goes beyond interview synthesis – we design and build custom solutions to surface patterns and insights that traditional CDD analysis cannot deliver - all in compressed deal timelines.",
+    detail: "AI analytics combined with 15+ years of due diligence work. Our custom tooling goes beyond interview synthesis. We design and build custom solutions to surface patterns and insights that traditional CDD analysis cannot deliver, all in compressed deal timelines.",
     bullets: [
       "Faster synthesis across public and proprietary datasets",
       "Deep expertise from 200+ CDD engagements to understand what moves the needle",
@@ -262,9 +262,9 @@ export default function ServicesPage() {
                   { label: "Output", val: "Prioritized growth roadmap, executive and sponsor alignment" },
                   { label: "Engagement model", val: "Principal-led, fixed fee" },
                 ].map(({ label, val }) => (
-                  <div key={label} className="flex items-center justify-between border-b border-slate-100 pb-3 last:border-0 last:pb-0">
-                    <span className="text-sm text-slate-500">{label}</span>
-                    <span className="text-sm font-semibold text-navy-800">{val}</span>
+                  <div key={label} className="flex items-start justify-between gap-4 border-b border-slate-100 pb-3 last:border-0 last:pb-0">
+                    <span className="text-sm text-slate-500 shrink-0 w-32">{label}</span>
+                    <span className="text-sm font-semibold text-navy-800 text-right">{val}</span>
                   </div>
                 ))}
               </div>

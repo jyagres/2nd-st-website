@@ -14,7 +14,7 @@ export default function ContactForm() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const subject = encodeURIComponent(
-      `Inquiry from ${formState.name} – ${formState.firm}`
+      `Inquiry from ${formState.name}, ${formState.firm}`
     );
     const body = encodeURIComponent(
       `Name: ${formState.name}\nFirm: ${formState.firm}\nEmail: ${formState.email}\n\n${formState.message}`

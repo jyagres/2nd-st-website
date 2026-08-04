@@ -47,7 +47,7 @@ export default function TeamPage() {
             <span className="text-gradient-blue">the work.</span>
           </h1>
           <p className="body-lg text-slate-500 max-w-2xl">
-            Small by design. Principal-led from start to finish.
+            Principal-led from start to finish, by design.
           </p>
         </div>
       </section>
