@@ -3,9 +3,17 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact - 2nd St Strategy",
+  title: "Contact",
   description:
     "Get in touch with 2nd St Strategy for commercial due diligence, growth strategy, or AI-powered analytics engagements.",
+  alternates: { canonical: "https://2ndststrategy.com/contact" },
+  openGraph: {
+    title: "Contact | 2nd St Strategy",
+    description:
+      "Get in touch with 2nd St Strategy for commercial due diligence, growth strategy, or AI-powered analytics engagements.",
+    url: "https://2ndststrategy.com/contact",
+    type: "website",
+  },
 };
 
 const faqs = [

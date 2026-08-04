@@ -2,9 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services - 2nd St Strategy",
+  title: "Services",
   description:
     "Commercial due diligence, growth strategy, voice of market research, and AI-powered analytics for middle-market private equity.",
+  alternates: { canonical: "https://2ndststrategy.com/services" },
+  openGraph: {
+    title: "Services | 2nd St Strategy",
+    description:
+      "Commercial due diligence, growth strategy, voice of market research, and AI-powered analytics for middle-market private equity.",
+    url: "https://2ndststrategy.com/services",
+    type: "website",
+  },
 };
 
 const cddProcess = [

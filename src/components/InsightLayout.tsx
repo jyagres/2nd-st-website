@@ -12,7 +12,32 @@ interface InsightLayoutProps {
   subtitle: string;
   faqs: FAQ[];
   children: ReactNode;
+  /** Slug of the current insight so it can be filtered out of related-links. */
+  currentSlug?: string;
 }
+
+const allInsights: Array<{ slug: string; title: string; blurb: string }> = [
+  {
+    slug: "commercial-due-diligence",
+    title: "Commercial Due Diligence for Middle-Market PE",
+    blurb: "What CDD is, what a good report looks like, and how the work is done.",
+  },
+  {
+    slug: "cdd-for-roll-ups",
+    title: "CDD for Roll-Ups and Platform Acquisitions",
+    blurb: "How roll-up diligence differs from a standalone business.",
+  },
+  {
+    slug: "voice-of-market-research",
+    title: "Voice of Market Research",
+    blurb: "How 2nd St runs primary research inside CDD.",
+  },
+  {
+    slug: "ai-tools-pe-diligence",
+    title: "AI Tools for Private Equity Due Diligence",
+    blurb: "Where AI adds leverage in CDD, and where it does not.",
+  },
+];
 
 /**
  * Standard layout for long-form insight pages on 2ndststrategy.com.
@@ -30,7 +55,9 @@ export default function InsightLayout({
   subtitle,
   faqs,
   children,
+  currentSlug,
 }: InsightLayoutProps) {
+  const relatedInsights = allInsights.filter((p) => p.slug !== currentSlug);
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -85,6 +112,53 @@ export default function InsightLayout({
                   <h3 className="font-bold text-navy-900 text-base mb-2">{q}</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">{a}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* RELATED INSIGHTS */}
+      {relatedInsights.length > 0 && (
+        <section className="section-pad bg-white border-t border-slate-200">
+          <div className="container-tight max-w-4xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-px bg-accent-blue" />
+              <span className="label-tag">Related insights</span>
+            </div>
+            <h2 className="heading-lg text-navy-900 mb-10">
+              More from the work.
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-6">
+              {relatedInsights.map(({ slug, title: t, blurb }) => (
+                <Link
+                  key={slug}
+                  href={`/insights/${slug}`}
+                  className="card-base hover:shadow-md transition-shadow"
+                >
+                  <h3 className="font-bold text-navy-900 text-base mb-2 leading-snug">
+                    {t}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {blurb}
+                  </p>
+                  <span className="inline-flex items-center gap-2 mt-4 text-sm font-semibold text-accent-blue">
+                    Read more
+                    <svg
+                      className="w-3.5 h-3.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </span>
+                </Link>
               ))}
             </div>
           </div>

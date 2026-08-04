@@ -2,9 +2,17 @@
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI-Driven - 2nd St Strategy",
+  title: "AI-Driven",
   description:
     "What it means to fully embrace AI for deal work. AI-powered due diligence, market intelligence platforms, and AI strategy for middle-market private equity.",
+  alternates: { canonical: "https://2ndststrategy.com/ai-driven" },
+  openGraph: {
+    title: "AI-Driven | 2nd St Strategy",
+    description:
+      "What it means to fully embrace AI for deal work. AI-powered due diligence, market intelligence platforms, and AI strategy for middle-market private equity.",
+    url: "https://2ndststrategy.com/ai-driven",
+    type: "website",
+  },
 };
 
 const aiCapabilities = [

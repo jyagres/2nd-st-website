@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://2ndststrategy.com/insights/voice-of-market-research",
   },
+  openGraph: {
+    title: "Voice of Market Research | 2nd St Strategy",
+    description:
+      "How 2nd St Strategy runs voice-of-market research inside commercial due diligence, and what most CDD reports get wrong about customer interviews.",
+    url: "https://2ndststrategy.com/insights/voice-of-market-research",
+    type: "article",
+  },
 };
 
 const faqs = [
@@ -41,6 +48,7 @@ export default function Page() {
       title="Voice of market research, done right."
       subtitle="The customer interview is the most important artifact in a CDD process. Here is how 2nd St Strategy runs voice-of-market research and what most reports get wrong."
       faqs={faqs}
+      currentSlug="voice-of-market-research"
     >
       <h2>Why the customer interview is the most important artifact</h2>
       <p>

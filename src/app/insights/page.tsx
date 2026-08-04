@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "Insights on commercial due diligence, growth strategy, AI analytics, and middle-market private equity from 2nd St Strategy.",
   alternates: { canonical: "https://2ndststrategy.com/insights" },
+  openGraph: {
+    title: "Insights | 2nd St Strategy",
+    description:
+      "Insights on commercial due diligence, growth strategy, AI analytics, and middle-market private equity from 2nd St Strategy.",
+    url: "https://2ndststrategy.com/insights",
+    type: "website",
+  },
 };
 
 const posts = [

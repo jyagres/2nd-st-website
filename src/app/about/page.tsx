@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   description:
     "About 2nd St Strategy. Principal-led commercial due diligence and growth strategy for middle-market private equity.",
   alternates: { canonical: "https://2ndststrategy.com/about" },
+  openGraph: {
+    title: "About | 2nd St Strategy",
+    description:
+      "About 2nd St Strategy. Principal-led commercial due diligence and growth strategy for middle-market private equity.",
+    url: "https://2ndststrategy.com/about",
+    type: "website",
+  },
 };
 
 const principles = [

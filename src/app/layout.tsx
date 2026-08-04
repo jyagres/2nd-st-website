@@ -7,11 +7,11 @@ import StructuredData from "@/components/StructuredData";
 export const metadata: Metadata = {
   metadataBase: new URL("https://2ndststrategy.com"),
   title: {
-    default: "Commercial Due Diligence & Growth Strategy with AI Analytics | 2nd St Strategy",
+    default: "2nd St Strategy. Commercial Due Diligence & Growth Strategy.",
     template: "%s | 2nd St Strategy",
   },
   description:
-    "Boutique commercial due diligence and growth strategy for middle-market private equity. Principal-led by James Agres. 200+ buy-side and sell-side engagements. AI-integrated.",
+    "Boutique commercial due diligence and growth strategy for middle-market private equity. Principal-led. 200+ buy-side and sell-side engagements. AI-integrated.",
   keywords: [
     "commercial due diligence",
     "private equity",
@@ -46,17 +46,26 @@ export const metadata: Metadata = {
   openGraph: {
     title: "2nd St Strategy. Commercial Due Diligence & Growth Strategy for Middle-Market PE.",
     description:
-      "Boutique commercial due diligence and growth strategy for middle-market private equity. Principal-led by James Agres. 200+ buy-side and sell-side engagements.",
+      "Boutique commercial due diligence and growth strategy for middle-market private equity. Principal-led. 200+ buy-side and sell-side engagements.",
     url: "https://2ndststrategy.com",
     siteName: "2nd St Strategy",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "2nd St Strategy. Commercial Due Diligence & Growth Strategy for Middle-Market Private Equity.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "2nd St Strategy. Commercial Due Diligence & Growth Strategy.",
     description:
       "Boutique CDD and growth strategy for middle-market private equity. Principal-led, AI-integrated.",
+    images: ["/og-image.png"],
   },
 };
 

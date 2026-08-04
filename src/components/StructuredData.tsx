@@ -110,52 +110,12 @@ export default function StructuredData() {
     },
   };
 
-  const faq = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "What is 2nd St Strategy?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "2nd St Strategy is a boutique commercial due diligence and growth strategy firm focused exclusively on middle-market private equity. Engagements are principal-led, grounded in primary research, and accelerated by proprietary AI analytics.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What services does 2nd St Strategy offer?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Commercial due diligence (buy-side and sell-side), growth strategy for portfolio companies, voice-of-market research with B2B and B2C customers and experts, and AI analytics tools custom-built for PE diligence and portfolio strategy.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Who does 2nd St Strategy work with?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Middle-market private equity sponsors, independent sponsors, family offices, and PE-backed portfolio company management teams. Sectors include industrial and B2B services, business services, consumer services, healthcare services, software, and building products.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "How is 2nd St Strategy different from other CDD firms?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Every engagement is run by James Agres directly with no hand-offs to analysts the client has never met. The firm pairs traditional primary-research-first commercial due diligence with proprietary AI tools, including PinpointIQ for geographic market intelligence on location-based roll-ups.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What is PinpointIQ?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "PinpointIQ is a geographic market intelligence platform built by 2nd St Strategy for PE firms backing location-based roll-ups. It covers 30+ verticals and 900+ U.S. markets and provides MSA-level TAM, competitive density, demographic drivers, and individual business data down to the census-tract level.",
-        },
-      },
-    ],
-  };
+  // Note: Global FAQPage schema removed 2026-08-04. Google requires FAQPage
+  // structured data to correspond to visible Q&A content on the page; the
+  // global FAQ was not rendered anywhere on the homepage / other layout-scoped
+  // pages, which caused schema.org validation errors on every URL in the
+  // Ahrefs audit. FAQPage schema still lives on individual insight pages via
+  // InsightLayout where the Q&A content is actually rendered.
 
   return (
     <>
@@ -174,10 +134,6 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pinpointiq) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }}
       />
     </>
   );

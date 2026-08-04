@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://2ndststrategy.com/insights/ai-tools-pe-diligence",
   },
+  openGraph: {
+    title: "AI Tools for Private Equity Due Diligence | 2nd St Strategy",
+    description:
+      "Where AI actually adds leverage in a private equity CDD process, where it does not, and what the tooling stack looks like at a firm using it well.",
+    url: "https://2ndststrategy.com/insights/ai-tools-pe-diligence",
+    type: "article",
+  },
 };
 
 const faqs = [
@@ -41,6 +48,7 @@ export default function Page() {
       title="AI tools for private equity due diligence."
       subtitle="Where AI actually adds leverage in CDD, where it does not, and what the tooling stack looks like at a firm using it well."
       faqs={faqs}
+      currentSlug="ai-tools-pe-diligence"
     >
       <h2>The honest answer on AI in CDD</h2>
       <p>

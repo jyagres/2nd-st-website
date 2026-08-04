@@ -5,9 +5,16 @@ import InsightLayout from "@/components/InsightLayout";
 export const metadata: Metadata = {
   title: "CDD for Roll-Ups and Platform Acquisitions",
   description:
-    "How commercial due diligence on a platform-and-add-on roll-up differs from a standalone business, and what to look for in the local services categories PE is consolidating.",
+    "How CDD on a platform-and-add-on roll-up differs from a standalone business, and what to look for in the local-services categories PE is consolidating.",
   alternates: {
     canonical: "https://2ndststrategy.com/insights/cdd-for-roll-ups",
+  },
+  openGraph: {
+    title: "CDD for Roll-Ups and Platform Acquisitions | 2nd St Strategy",
+    description:
+      "How CDD on a platform-and-add-on roll-up differs from a standalone business, and what to look for in the local-services categories PE is consolidating.",
+    url: "https://2ndststrategy.com/insights/cdd-for-roll-ups",
+    type: "article",
   },
 };
 
@@ -41,6 +48,7 @@ export default function Page() {
       title="Commercial due diligence for roll-ups."
       subtitle="How CDD on a platform-and-add-on roll-up differs from a standalone business, and what to look for in the local services categories PE is consolidating."
       faqs={faqs}
+      currentSlug="cdd-for-roll-ups"
     >
       <h2>Roll-up CDD validates two theses, not one</h2>
       <p>

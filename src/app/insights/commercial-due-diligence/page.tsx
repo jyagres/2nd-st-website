@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://2ndststrategy.com/insights/commercial-due-diligence",
   },
+  openGraph: {
+    title: "Commercial Due Diligence for Middle-Market PE | 2nd St Strategy",
+    description:
+      "What commercial due diligence is, what a good CDD report looks like, and how 2nd St Strategy runs the work for middle-market private equity.",
+    url: "https://2ndststrategy.com/insights/commercial-due-diligence",
+    type: "article",
+  },
 };
 
 const faqs = [
@@ -45,6 +52,7 @@ export default function Page() {
       title="Commercial due diligence for middle-market private equity."
       subtitle="What CDD actually is, what a good CDD report looks like, and how 2nd St Strategy runs the work."
       faqs={faqs}
+      currentSlug="commercial-due-diligence"
     >
       <h2>What commercial due diligence is</h2>
       <p>
