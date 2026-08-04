@@ -206,11 +206,19 @@ export default function AiDrivenPage() {
             {/* Project 20. GSP01 */}
             <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-accent-blue/30 transition-all duration-200">
               <div className="relative w-full aspect-video bg-slate-900 overflow-hidden">
-                <img
-                  src="/case-studies/project-20/animation.gif"
-                  alt="GSP01 SFX Pipeline"
-                  className="w-full h-full object-cover"
-                />
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster="/case-studies/project-20/animation-poster.jpg"
+                  aria-label="GSP01 SFX Pipeline"
+                >
+                  <source src="/case-studies/project-20/animation.webm" type="video/webm" />
+                  <source src="/case-studies/project-20/animation.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">
@@ -248,11 +256,19 @@ export default function AiDrivenPage() {
             {/* Project 19. PinpointIQ */}
             <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-accent-blue/30 transition-all duration-200">
               <div className="relative w-full aspect-video bg-slate-900 overflow-hidden">
-                <img
-                  src="/case-studies/project-19/animation.gif"
-                  alt="PinpointIQ"
-                  className="w-full h-full object-cover"
-                />
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
+                  poster="/case-studies/project-19/animation-poster.jpg"
+                  aria-label="PinpointIQ"
+                >
+                  <source src="/case-studies/project-19/animation.webm" type="video/webm" />
+                  <source src="/case-studies/project-19/animation.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-3">

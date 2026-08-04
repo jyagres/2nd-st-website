@@ -15,6 +15,24 @@ type Project = {
   images: string[];
 };
 
+/**
+ * A slide source is a video if it ends in .mp4 or .webm. Videos are looped,
+ * muted, autoplayed silently (like a GIF). For each .mp4 we also expect a
+ * sibling .webm at the same path and a sibling -poster.jpg for the poster.
+ */
+function isVideoSrc(src: string): boolean {
+  return /\.(mp4|webm)$/i.test(src);
+}
+
+function videoSiblings(src: string): { mp4: string; webm: string; poster: string } {
+  const base = src.replace(/\.(mp4|webm)$/i, "");
+  return {
+    mp4: `${base}.mp4`,
+    webm: `${base}.webm`,
+    poster: `${base}-poster.jpg`,
+  };
+}
+
 const projects: Project[] = [
   {
     id: 20,
@@ -28,7 +46,7 @@ const projects: Project[] = [
     description:
       "A sports and entertainment investment firm needed a systematic way to catalog the use of special effects. lasers, pyrotechnics, CO2 jets, confetti cannons, flame jets, and pixel walls. across thousands of live concert performances. 2nd St Strategy designed and deployed a custom AI-powered video analysis pipeline to review concert footage at scale, identifying and timestamping special effects across 2,000+ shows across genres and venues.",
     highlights: ["AI Video Analysis Pipeline (Gemini 2.5 on Vertex AI)", "2,000+ Concert Video Corpus (5 Genres × 2 Years)", "Multi-Stage Frame Verification Workflow", "Structured SFX Database by Show, Venue, Artist, and Genre"],
-    images: ["/case-studies/project-20/animation.gif"],
+    images: ["/case-studies/project-20/animation.mp4"],
   },
   {
     id: 19,
@@ -42,7 +60,7 @@ const projects: Project[] = [
     description:
       "A private equity-focused strategy consulting firm needed a scalable way to deliver MSA-level and census tract-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built PinpointIQ, a proprietary SaaS platform to replace manual market sizing with dynamic, map-based analytics.",
     highlights: ["Market Sizing by MSA and Census Tract", "Business Density and Competitive Mapping", "GDP, Income, and Demographic Overlays", "Roll-Up Target Identification Framework"],
-    images: ["/case-studies/project-19/animation.gif"],
+    images: ["/case-studies/project-19/animation.mp4"],
   },
   {
     id: 11,
@@ -443,13 +461,32 @@ function Lightbox({ state, onClose, onNav }: {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative w-full aspect-video">
-          <Image
-            src={images[index]}
-            alt={`Slide ${index + 1} of ${images.length}`}
-            fill
-            className="object-contain"
-            sizes="(max-width: 1280px) 100vw, 1280px"
-          />
+          {isVideoSrc(images[index]) ? (() => {
+            const { mp4, webm, poster } = videoSiblings(images[index]);
+            return (
+              <video
+                key={images[index]}
+                className="absolute inset-0 w-full h-full object-contain"
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster={poster}
+                aria-label={`Slide ${index + 1} of ${images.length}`}
+              >
+                <source src={webm} type="video/webm" />
+                <source src={mp4} type="video/mp4" />
+              </video>
+            );
+          })() : (
+            <Image
+              src={images[index]}
+              alt={`Slide ${index + 1} of ${images.length}`}
+              fill
+              className="object-contain"
+              sizes="(max-width: 1280px) 100vw, 1280px"
+            />
+          )}
         </div>
 
         {/* Slide counter */}
@@ -627,18 +664,38 @@ export default function WorkPage() {
                   {/* Carousel. only render if images exist */}
                   {project.images.length > 0 && (
                     <div className="relative w-full aspect-video bg-slate-900 overflow-hidden border-b border-slate-200">
-                      {/* Current image */}
+                      {/* Current image or video */}
                       <div
                         className="relative w-full h-full cursor-pointer"
                         onClick={() => setLightbox({ images: project.images, index: currentIdx })}
                       >
-                        <Image
-                          src={project.images[currentIdx]}
-                          alt={`${project.title}. slide ${currentIdx + 1}`}
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        />
+                        {isVideoSrc(project.images[currentIdx]) ? (() => {
+                          const { mp4, webm, poster } = videoSiblings(project.images[currentIdx]);
+                          return (
+                            <video
+                              key={project.images[currentIdx]}
+                              className="absolute inset-0 w-full h-full object-cover"
+                              autoPlay
+                              loop
+                              muted
+                              playsInline
+                              preload="metadata"
+                              poster={poster}
+                              aria-label={`${project.title}. slide ${currentIdx + 1}`}
+                            >
+                              <source src={webm} type="video/webm" />
+                              <source src={mp4} type="video/mp4" />
+                            </video>
+                          );
+                        })() : (
+                          <Image
+                            src={project.images[currentIdx]}
+                            alt={`${project.title}. slide ${currentIdx + 1}`}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
+                        )}
                       </div>
 
                       {/* Left arrow */}
