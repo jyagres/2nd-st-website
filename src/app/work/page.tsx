@@ -35,6 +35,34 @@ function videoSiblings(src: string): { mp4: string; webm: string; poster: string
 
 const projects: Project[] = [
   {
+    id: 20,
+    sector: ["Business Services"],
+    serviceType: ["Buy-Side DD", "AI Analytics"],
+    title: "Do recent trends in live entertainment create tailwinds for a special effects company?",
+    outcomes: [
+      "Built a proprietary SFX database covering 2,000+ concerts. not available from any existing source",
+      "Reduced research time from months of manual review to automated overnight processing via custom AI pipeline",
+    ],
+    description:
+      "A sports and entertainment investment firm needed a systematic way to catalog the use of special effects. lasers, pyrotechnics, CO2 jets, confetti cannons, flame jets, and pixel walls. across thousands of live concert performances. 2nd St Strategy designed and deployed a custom AI-powered video analysis pipeline to review concert footage at scale, identifying and timestamping special effects across 2,000+ shows across genres and venues.",
+    highlights: ["AI Video Analysis Pipeline (Gemini 2.5 on Vertex AI)", "2,000+ Concert Video Corpus (5 Genres × 2 Years)", "Multi-Stage Frame Verification Workflow", "Structured SFX Database by Show, Venue, Artist, and Genre"],
+    images: ["/case-studies/project-20/animation.mp4"],
+  },
+  {
+    id: 19,
+    sector: ["Business Services"],
+    serviceType: ["Roll-Up Strategy", "AI Analytics"],
+    title: "How can a geographic market intelligence platform accelerate roll-up strategy for PE-backed businesses?",
+    outcomes: [
+      "Replaced weeks of manual market analysis with on-demand geographic intelligence across 939 U.S. MSAs",
+      "Enables consistent, data-driven acquisition targeting for PE-backed roll-up strategies",
+    ],
+    description:
+      "A private equity-focused strategy consulting firm needed a scalable way to deliver MSA-level and census tract-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built PinpointIQ, a proprietary SaaS platform to replace manual market sizing with dynamic, map-based analytics.",
+    highlights: ["Market Sizing by MSA and Census Tract", "Business Density and Competitive Mapping", "GDP, Income, and Demographic Overlays", "Roll-Up Target Identification Framework"],
+    images: ["/case-studies/project-19/animation.mp4"],
+  },
+  {
     id: 25,
     sector: ["Technology"],
     serviceType: ["Buy-Side DD"],
@@ -123,34 +151,6 @@ const projects: Project[] = [
       "/case-studies/project-24/image-2.png",
       "/case-studies/project-24/image-3.png",
     ],
-  },
-  {
-    id: 20,
-    sector: ["Business Services"],
-    serviceType: ["Buy-Side DD", "AI Analytics"],
-    title: "Do recent trends in live entertainment create tailwinds for a special effects company?",
-    outcomes: [
-      "Built a proprietary SFX database covering 2,000+ concerts. not available from any existing source",
-      "Reduced research time from months of manual review to automated overnight processing via custom AI pipeline",
-    ],
-    description:
-      "A sports and entertainment investment firm needed a systematic way to catalog the use of special effects. lasers, pyrotechnics, CO2 jets, confetti cannons, flame jets, and pixel walls. across thousands of live concert performances. 2nd St Strategy designed and deployed a custom AI-powered video analysis pipeline to review concert footage at scale, identifying and timestamping special effects across 2,000+ shows across genres and venues.",
-    highlights: ["AI Video Analysis Pipeline (Gemini 2.5 on Vertex AI)", "2,000+ Concert Video Corpus (5 Genres × 2 Years)", "Multi-Stage Frame Verification Workflow", "Structured SFX Database by Show, Venue, Artist, and Genre"],
-    images: ["/case-studies/project-20/animation.mp4"],
-  },
-  {
-    id: 19,
-    sector: ["Business Services"],
-    serviceType: ["Roll-Up Strategy", "AI Analytics"],
-    title: "How can a geographic market intelligence platform accelerate roll-up strategy for PE-backed businesses?",
-    outcomes: [
-      "Replaced weeks of manual market analysis with on-demand geographic intelligence across 939 U.S. MSAs",
-      "Enables consistent, data-driven acquisition targeting for PE-backed roll-up strategies",
-    ],
-    description:
-      "A private equity-focused strategy consulting firm needed a scalable way to deliver MSA-level and census tract-level market intelligence to clients evaluating acquisition targets in fragmented, geography-driven industries. 2nd St Strategy designed and built PinpointIQ, a proprietary SaaS platform to replace manual market sizing with dynamic, map-based analytics.",
-    highlights: ["Market Sizing by MSA and Census Tract", "Business Density and Competitive Mapping", "GDP, Income, and Demographic Overlays", "Roll-Up Target Identification Framework"],
-    images: ["/case-studies/project-19/animation.mp4"],
   },
   {
     id: 11,
