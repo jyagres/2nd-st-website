@@ -35,6 +35,96 @@ function videoSiblings(src: string): { mp4: string; webm: string; poster: string
 
 const projects: Project[] = [
   {
+    id: 25,
+    sector: ["Technology"],
+    serviceType: ["Buy-Side DD"],
+    title: "Can a carved-out APAC fraud and compliance software business defend its base against AI-native challengers?",
+    outcomes: [
+      "Sized a ~$4.8B APAC TAM and a ~$100-140M SAM growing ~15% annually",
+      "Validated a defensible installed base in Tier-2/3 domestic banks across Southeast Asia and ANZ",
+    ],
+    description:
+      "A private equity firm was in exclusivity on the carve-out of a fraud and compliance software division serving ~100 Tier-2/3 financial institutions across APAC and MENA. 2nd St Strategy pressure-tested market size, pricing, and displacement risk by interviewing 10 bank fraud and compliance decision-makers and 4 former competitor sales and product leaders, benchmarked capabilities and pricing against Tier-1 incumbents and AI-native challengers, and probability-weighted the sales pipeline.",
+    highlights: ["TAM Build Across 11 Markets", "TAM to SAM Bridge", "Market Share by Market", "Pipeline Probability Weighting", "Capability Benchmarking vs. Incumbents and Challengers"],
+    images: [
+      "/case-studies/project-25/image-1.png",
+      "/case-studies/project-25/image-2.png",
+      "/case-studies/project-25/image-3.png",
+    ],
+  },
+  {
+    id: 27,
+    sector: ["Industrials"],
+    serviceType: ["Buy-Side DD"],
+    title: "Where can a screen media and crusher wear parts supplier grow in a steady but crowded aggregates market?",
+    outcomes: [
+      "Sized a ~$3.8B U.S. TAM and ~$1.5B SAM growing 4.3-5.2% annually through 2031",
+      "Identified screen media as the strongest opportunity with ~80% third-party share of a ~$0.8B segment",
+    ],
+    description:
+      "A private equity firm was evaluating an investment in a U.S. manufacturer and distributor of screen media, crusher wear parts, and related components serving aggregates, mining, and industrial end markets. 2nd St Strategy interviewed 15 aggregate, mining, and industrial operators and competitors, sized the market by product category and state using aggregate production and consumables spend data, analyzed import trade and bill-of-lading data to track sourcing shifts and tariff exposure, and profiled competitors, OEM aftermarket strategies, and dealer networks.",
+    highlights: ["TAM by State and Product Category", "TAM Forecast and Growth Drivers", "Dealer Network Fragmentation", "Import and Tariff Exposure", "Adjacent Market Expansion"],
+    images: [
+      "/case-studies/project-27/image-1.png",
+      "/case-studies/project-27/image-2.png",
+      "/case-studies/project-27/image-3.png",
+    ],
+  },
+  {
+    id: 23,
+    sector: ["Technology"],
+    serviceType: ["Strategy"],
+    title: "Is there a $50m opportunity for an LLM answer-optimization platform among U.S. insurance carriers?",
+    outcomes: [
+      "Sized a ~$860M total improvement opportunity; validated the $50M target as ~6% of the opportunity",
+      "Identified whole and term life DTC as the clear go segment, with auto secondary",
+    ],
+    description:
+      "A provider of LLM answer-optimization software was evaluating the U.S. insurance industry as a growth vertical, with an internal target of $50M in insurance revenue within 24 months. 2nd St Strategy conducted in-depth interviews with 14 senior marketing leaders with budget authority across life, P&C, and group benefits carriers, assessed willingness to test, pilot budgets, and budget ownership, and built a bottom-up market opportunity model by segment from policy lifetime value, expected improvement, and interest in piloting.",
+    highlights: ["Interview Coverage Across Life, P&C, and Group Carriers", "Market Opportunity Sizing", "Segment Opportunity Build", "Pilot Budget and Signing-Authority Mapping"],
+    images: [
+      "/case-studies/project-23/image-1.png",
+      "/case-studies/project-23/image-2.png",
+      "/case-studies/project-23/image-3.png",
+    ],
+  },
+  {
+    id: 26,
+    sector: ["Technology"],
+    serviceType: ["Buy-Side DD"],
+    title: "Can a Caribbean government software provider grow across the region and into U.S. local government?",
+    outcomes: [
+      "Sized a ~$40M Caribbean TAM and ~$15.5M SAM of agencies yet to adopt a modern third-party solution",
+      "Sized a $295M U.S. TAM across vital records and community development software for smaller localities",
+    ],
+    description:
+      "A software investor was considering an investment in a Cayman Islands-based provider of cloud government services software with ~$10M in revenue. The thesis rested on two growth vectors: other Caribbean jurisdictions and U.S. local government agencies. 2nd St Strategy interviewed 15 Caribbean and U.S. government decision-makers, competitors, and industry participants, surveyed 112 U.S. local government decision-makers on vital records and community development software, and sized TAM and SAM across 19 Caribbean jurisdictions and U.S. counties and municipalities.",
+    highlights: ["Caribbean Market Sizing Across 19 Jurisdictions", "U.S. Local Government TAM Build", "Customer Satisfaction and NPS Benchmarking", "Competitive Positioning vs. Emerging SaaS Vendors"],
+    images: [
+      "/case-studies/project-26/image-1.png",
+      "/case-studies/project-26/image-2.png",
+      "/case-studies/project-26/image-3.png",
+    ],
+  },
+  {
+    id: 24,
+    sector: ["Technology"],
+    serviceType: ["Buy-Side DD"],
+    title: "How large is the market for a forex bridge platform provider, and can it keep winning share from market leaders?",
+    outcomes: [
+      "Estimated a ~$135M global TAM (ex-Japan) and a $66-87M SAM for second-tier providers",
+      "Showed market leaders' share falling from ~80% to ~60% as emerging players offer feature parity at up to half the cost",
+    ],
+    description:
+      "A private equity firm was considering an investment in a U.K.-based fintech provider of bridge platforms that connect forex brokers to liquidity providers. Because the company's revenue is tied directly to trading volume, which is not centrally tracked, 2nd St Strategy validated the TAM, the value proposition to brokers, and the competitive dynamics by interviewing 12 forex brokers, competing bridge providers, and liquidity providers; sized the market from retail broker trading volume, addressable platform share, and per-million transaction pricing; and analyzed the shift from forex to Contracts for Difference (CFDs).",
+    highlights: ["Broker Concentration Analysis", "TAM and SAM Estimation", "Trading Volume Mix Shift to CFDs", "Competitive Feature and Pricing Benchmarking"],
+    images: [
+      "/case-studies/project-24/image-1.png",
+      "/case-studies/project-24/image-2.png",
+      "/case-studies/project-24/image-3.png",
+    ],
+  },
+  {
     id: 20,
     sector: ["Business Services"],
     serviceType: ["Buy-Side DD", "AI Analytics"],
